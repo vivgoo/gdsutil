@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1745a329-99d2-4bb7-953a-375f80a7289e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/queue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/queue_test.go" afterDir="false" />
+    <list default="true" id="1745a329-99d2-4bb7-953a-375f80a7289e" name="Default Changelist" comment="delete god file">
+      <change afterPath="$PROJECT_DIR$/ringqueue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ringqueue_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ringqueue/ringqueue.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ringqueue/ringqueue_test.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +51,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -56,9 +60,18 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build github.com/vivgoo/gdsutil">
+    <configuration name="go build github.com/vivgoo/gdsutil" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gdsutil" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/vivgoo/gdsutil" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go test github.com/vivgoo/gdsutil/ringqueue" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="gdsutil" />
       <working_directory value="$PROJECT_DIR$/ringqueue" />
@@ -71,6 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/vivgoo/gdsutil" />
         <item itemvalue="Go Test.go test github.com/vivgoo/gdsutil/ringqueue" />
       </list>
     </recent_temporary>
@@ -91,6 +105,11 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="delete god file" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete god file" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <environment>
@@ -100,21 +119,29 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state width="811" height="138" key="GridCell.Tab.0.bottom" timestamp="1601224229549">
+    <state x="186" y="71" width="800" height="684" key="#Deployment" timestamp="1601300063845">
       <screen x="56" y="27" width="968" height="741" />
     </state>
-    <state width="811" height="138" key="GridCell.Tab.0.bottom/56.27.968.741@56.27.968.741" timestamp="1601224229549" />
-    <state width="811" height="138" key="GridCell.Tab.0.center" timestamp="1601224229549">
+    <state x="186" y="71" width="800" height="684" key="#Deployment/56.27.968.741@56.27.968.741" timestamp="1601300063845" />
+    <state width="811" height="136" key="GridCell.Tab.0.bottom" timestamp="1601258400554">
       <screen x="56" y="27" width="968" height="741" />
     </state>
-    <state width="811" height="138" key="GridCell.Tab.0.center/56.27.968.741@56.27.968.741" timestamp="1601224229549" />
-    <state width="811" height="138" key="GridCell.Tab.0.left" timestamp="1601224229548">
+    <state width="811" height="136" key="GridCell.Tab.0.bottom/56.27.968.741@56.27.968.741" timestamp="1601258400554" />
+    <state width="811" height="136" key="GridCell.Tab.0.center" timestamp="1601258400554">
       <screen x="56" y="27" width="968" height="741" />
     </state>
-    <state width="811" height="138" key="GridCell.Tab.0.left/56.27.968.741@56.27.968.741" timestamp="1601224229548" />
-    <state width="811" height="138" key="GridCell.Tab.0.right" timestamp="1601224229549">
+    <state width="811" height="136" key="GridCell.Tab.0.center/56.27.968.741@56.27.968.741" timestamp="1601258400554" />
+    <state width="811" height="136" key="GridCell.Tab.0.left" timestamp="1601258400554">
       <screen x="56" y="27" width="968" height="741" />
     </state>
-    <state width="811" height="138" key="GridCell.Tab.0.right/56.27.968.741@56.27.968.741" timestamp="1601224229549" />
+    <state width="811" height="136" key="GridCell.Tab.0.left/56.27.968.741@56.27.968.741" timestamp="1601258400554" />
+    <state width="811" height="136" key="GridCell.Tab.0.right" timestamp="1601258400554">
+      <screen x="56" y="27" width="968" height="741" />
+    </state>
+    <state width="811" height="136" key="GridCell.Tab.0.right/56.27.968.741@56.27.968.741" timestamp="1601258400554" />
+    <state x="56" y="31" width="968" height="737" key="SettingsEditor" timestamp="1601300251911">
+      <screen x="56" y="27" width="968" height="741" />
+    </state>
+    <state x="56" y="31" width="968" height="737" key="SettingsEditor/56.27.968.741@56.27.968.741" timestamp="1601300251911" />
   </component>
 </project>

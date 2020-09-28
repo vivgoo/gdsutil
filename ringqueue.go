@@ -1,4 +1,4 @@
-package ringqueue
+package gdsutil
 
 type RingQueue struct {
 

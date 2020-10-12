@@ -5,14 +5,14 @@ import (
 	"testing"
 )
 
-func TestInitRingQueue(t *testing.T) {
-	_,err := InitRingQueue(0)
+func TestNewRingQueue(t *testing.T) {
+	_, err := NewRingQueue(0)
 	if err == SUCCESS {
 		t.Error("fail")
 	}
 
-	_,err = InitRingQueue(5)
-	if err == FAIL{
+	_, err = NewRingQueue(5)
+	if err == FAIL {
 		t.Error("fail")
 	}
 }
@@ -20,8 +20,9 @@ func TestInitRingQueue(t *testing.T) {
 type person struct {
 	name string
 }
+
 func TestRingQueue_EnQueue(t *testing.T) {
-	q,_ := InitRingQueue(5)
+	q, _ := NewRingQueue(5)
 	q.EnQueue(1)
 	q.EnQueue(2)
 	q.EnQueue(3)
@@ -33,23 +34,21 @@ func TestRingQueue_EnQueue(t *testing.T) {
 
 }
 
-
-
 func TestRingQueue_HeadData(t *testing.T) {
-	q,_ := InitRingQueue(5)
+	q, _ := NewRingQueue(5)
 	q.EnQueue(1)
 	q.EnQueue(2)
 	q.EnQueue(3)
 	q.EnQueue(4)
 
-	d,_ := q.HeadData()
+	d, _ := q.HeadData()
 	if d != 1 {
 		t.Error("应该为1")
 	}
 }
 
 func TestRingQueue_DeQueue(t *testing.T) {
-	q,_ := InitRingQueue(5)
+	q, _ := NewRingQueue(5)
 	p1 := person{"James soong"}
 	q.EnQueue(p1)
 	p2 := person{"Jin Wang"}
@@ -63,13 +62,13 @@ func TestRingQueue_DeQueue(t *testing.T) {
 	q.EnQueue(p5)
 
 	for q.IsEmpty() == false {
-		t,_ := q.DeQueue()
+		t, _ := q.DeQueue()
 		fmt.Println(t)
 	}
 }
 
 func TestRingQueue_IsEmpty(t *testing.T) {
-	q,_ := InitRingQueue(5)
+	q, _ := NewRingQueue(5)
 	if q.IsEmpty() == false {
 		t.Error("应该是空")
 	}

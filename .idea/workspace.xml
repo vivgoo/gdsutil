@@ -16,11 +16,22 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1745a329-99d2-4bb7-953a-375f80a7289e" name="Default Changelist" comment="delete god file">
+      <change afterPath="$PROJECT_DIR$/linklist.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linklist_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/queue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queue_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/queue_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ringqueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/ringqueue.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ringqueue_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ringqueue_test.go" afterDir="false" />
     </list>
@@ -40,6 +51,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1i6MbTdiqBD43fnRfwRz3OfFR08" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -58,19 +75,10 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
-  <component name="RunManager" selected="Go Test.TestRingQueue_EnQueue in github.com/vivgoo/gdsutil">
-    <configuration name="go build github.com/vivgoo/gdsutil" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gdsutil" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="github.com/vivgoo/gdsutil" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestInitRingQueue in github.com/vivgoo/gdsutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestNewLinkList in github.com/vivgoo/gdsutil">
+    <configuration name="TestNewLinkList in github.com/vivgoo/gdsutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="gdsutil" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -78,10 +86,10 @@
       <package value="github.com/vivgoo/gdsutil" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestInitRingQueue\E$" />
+      <pattern value="^\QTestNewLinkList\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestRingQueue_EnQueue in github.com/vivgoo/gdsutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestQueue_EnQueue in github.com/vivgoo/gdsutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="gdsutil" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -89,7 +97,18 @@
       <package value="github.com/vivgoo/gdsutil" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestRingQueue_EnQueue\E$" />
+      <pattern value="^\QTestQueue_EnQueue\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRingQueue_DeQueue in github.com/vivgoo/gdsutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gdsutil" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/vivgoo/gdsutil" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestRingQueue_DeQueue\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestRingQueue_HeadData in github.com/vivgoo/gdsutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -103,23 +122,24 @@
       <pattern value="^\QTestRingQueue_HeadData\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test github.com/vivgoo/gdsutil/ringqueue" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRingQueue_IsEmpty in github.com/vivgoo/gdsutil" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="gdsutil" />
-      <working_directory value="$PROJECT_DIR$/ringqueue" />
+      <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/vivgoo/gdsutil/ringqueue" />
+      <package value="github.com/vivgoo/gdsutil" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestRingQueue_IsEmpty\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestRingQueue_EnQueue in github.com/vivgoo/gdsutil" />
+        <item itemvalue="Go Test.TestNewLinkList in github.com/vivgoo/gdsutil" />
+        <item itemvalue="Go Test.TestQueue_EnQueue in github.com/vivgoo/gdsutil" />
+        <item itemvalue="Go Test.TestRingQueue_IsEmpty in github.com/vivgoo/gdsutil" />
+        <item itemvalue="Go Test.TestRingQueue_DeQueue in github.com/vivgoo/gdsutil" />
         <item itemvalue="Go Test.TestRingQueue_HeadData in github.com/vivgoo/gdsutil" />
-        <item itemvalue="Go Test.TestInitRingQueue in github.com/vivgoo/gdsutil" />
-        <item itemvalue="Go Build.go build github.com/vivgoo/gdsutil" />
-        <item itemvalue="Go Test.go test github.com/vivgoo/gdsutil/ringqueue" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +152,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -157,52 +189,58 @@
       <screen x="56" y="27" width="968" height="741" />
     </state>
     <state x="186" y="71" width="800" height="684" key="#Deployment/56.27.968.741@56.27.968.741" timestamp="1601300063845" />
-    <state width="914" height="206" key="GridCell.Tab.0.bottom" timestamp="1601309262779">
+    <state x="395" y="83" width="800" height="719" key="#Plugins" timestamp="1602502442571">
+      <screen x="0" y="27" width="1600" height="825" />
+    </state>
+    <state x="395" y="83" width="800" height="719" key="#Plugins/0.27.1600.825@0.27.1600.825" timestamp="1602502442571" />
+    <state width="786" height="646" key="DebuggerActiveHint" timestamp="1602507804622">
+      <screen x="0" y="27" width="1600" height="825" />
+    </state>
+    <state width="786" height="646" key="DebuggerActiveHint/0.27.1600.825@0.27.1600.825" timestamp="1602507804622" />
+    <state width="475" height="580" key="DebuggerActiveHint/56.27.968.741@56.27.968.741" timestamp="1601356448212" />
+    <state width="882" height="161" key="GridCell.Tab.0.bottom" timestamp="1602514639071">
+      <screen x="0" y="27" width="1600" height="825" />
+    </state>
+    <state width="882" height="161" key="GridCell.Tab.0.bottom/0.27.1600.825@0.27.1600.825" timestamp="1602514639071" />
+    <state width="801" height="167" key="GridCell.Tab.0.bottom/56.27.968.741@56.27.968.741" timestamp="1601391050647" />
+    <state width="882" height="161" key="GridCell.Tab.0.center" timestamp="1602514639069">
+      <screen x="0" y="27" width="1600" height="825" />
+    </state>
+    <state width="882" height="161" key="GridCell.Tab.0.center/0.27.1600.825@0.27.1600.825" timestamp="1602514639069" />
+    <state width="801" height="167" key="GridCell.Tab.0.center/56.27.968.741@56.27.968.741" timestamp="1601391050647" />
+    <state width="882" height="161" key="GridCell.Tab.0.left" timestamp="1602514639068">
+      <screen x="0" y="27" width="1600" height="825" />
+    </state>
+    <state width="882" height="161" key="GridCell.Tab.0.left/0.27.1600.825@0.27.1600.825" timestamp="1602514639068" />
+    <state width="801" height="167" key="GridCell.Tab.0.left/56.27.968.741@56.27.968.741" timestamp="1601391050647" />
+    <state width="882" height="161" key="GridCell.Tab.0.right" timestamp="1602514639070">
+      <screen x="0" y="27" width="1600" height="825" />
+    </state>
+    <state width="882" height="161" key="GridCell.Tab.0.right/0.27.1600.825@0.27.1600.825" timestamp="1602514639070" />
+    <state width="801" height="167" key="GridCell.Tab.0.right/56.27.968.741@56.27.968.741" timestamp="1601391050647" />
+    <state width="882" height="161" key="GridCell.Tab.1.bottom" timestamp="1602514639074">
+      <screen x="0" y="27" width="1600" height="825" />
+    </state>
+    <state width="882" height="161" key="GridCell.Tab.1.bottom/0.27.1600.825@0.27.1600.825" timestamp="1602514639074" />
+    <state width="801" height="167" key="GridCell.Tab.1.bottom/56.27.968.741@56.27.968.741" timestamp="1601391050648" />
+    <state width="882" height="161" key="GridCell.Tab.1.center" timestamp="1602514639073">
+      <screen x="0" y="27" width="1600" height="825" />
+    </state>
+    <state width="882" height="161" key="GridCell.Tab.1.center/0.27.1600.825@0.27.1600.825" timestamp="1602514639073" />
+    <state width="801" height="167" key="GridCell.Tab.1.center/56.27.968.741@56.27.968.741" timestamp="1601391050648" />
+    <state width="882" height="161" key="GridCell.Tab.1.left" timestamp="1602514639072">
+      <screen x="0" y="27" width="1600" height="825" />
+    </state>
+    <state width="882" height="161" key="GridCell.Tab.1.left/0.27.1600.825@0.27.1600.825" timestamp="1602514639072" />
+    <state width="801" height="167" key="GridCell.Tab.1.left/56.27.968.741@56.27.968.741" timestamp="1601391050648" />
+    <state width="882" height="161" key="GridCell.Tab.1.right" timestamp="1602514639073">
+      <screen x="0" y="27" width="1600" height="825" />
+    </state>
+    <state width="882" height="161" key="GridCell.Tab.1.right/0.27.1600.825@0.27.1600.825" timestamp="1602514639073" />
+    <state width="801" height="167" key="GridCell.Tab.1.right/56.27.968.741@56.27.968.741" timestamp="1601391050648" />
+    <state x="56" y="31" width="968" height="737" key="SettingsEditor" timestamp="1601391043299">
       <screen x="56" y="27" width="968" height="741" />
     </state>
-    <state width="914" height="206" key="GridCell.Tab.0.bottom/56.27.968.741@56.27.968.741" timestamp="1601309262779" />
-    <state width="914" height="206" key="GridCell.Tab.0.center" timestamp="1601309262778">
-      <screen x="56" y="27" width="968" height="741" />
-    </state>
-    <state width="914" height="206" key="GridCell.Tab.0.center/56.27.968.741@56.27.968.741" timestamp="1601309262778" />
-    <state width="914" height="206" key="GridCell.Tab.0.left" timestamp="1601309262777">
-      <screen x="56" y="27" width="968" height="741" />
-    </state>
-    <state width="914" height="206" key="GridCell.Tab.0.left/56.27.968.741@56.27.968.741" timestamp="1601309262777" />
-    <state width="914" height="206" key="GridCell.Tab.0.right" timestamp="1601309262779">
-      <screen x="56" y="27" width="968" height="741" />
-    </state>
-    <state width="914" height="206" key="GridCell.Tab.0.right/56.27.968.741@56.27.968.741" timestamp="1601309262779" />
-    <state width="914" height="206" key="GridCell.Tab.1.bottom" timestamp="1601309262782">
-      <screen x="56" y="27" width="968" height="741" />
-    </state>
-    <state width="914" height="206" key="GridCell.Tab.1.bottom/56.27.968.741@56.27.968.741" timestamp="1601309262782" />
-    <state width="914" height="206" key="GridCell.Tab.1.center" timestamp="1601309262780">
-      <screen x="56" y="27" width="968" height="741" />
-    </state>
-    <state width="914" height="206" key="GridCell.Tab.1.center/56.27.968.741@56.27.968.741" timestamp="1601309262780" />
-    <state width="914" height="206" key="GridCell.Tab.1.left" timestamp="1601309262780">
-      <screen x="56" y="27" width="968" height="741" />
-    </state>
-    <state width="914" height="206" key="GridCell.Tab.1.left/56.27.968.741@56.27.968.741" timestamp="1601309262780" />
-    <state width="914" height="206" key="GridCell.Tab.1.right" timestamp="1601309262781">
-      <screen x="56" y="27" width="968" height="741" />
-    </state>
-    <state width="914" height="206" key="GridCell.Tab.1.right/56.27.968.741@56.27.968.741" timestamp="1601309262781" />
-    <state x="56" y="31" width="968" height="737" key="SettingsEditor" timestamp="1601300251911">
-      <screen x="56" y="27" width="968" height="741" />
-    </state>
-    <state x="56" y="31" width="968" height="737" key="SettingsEditor/56.27.968.741@56.27.968.741" timestamp="1601300251911" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/ringqueue.go</url>
-          <line>47</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="56" y="31" width="968" height="737" key="SettingsEditor/56.27.968.741@56.27.968.741" timestamp="1601391043299" />
   </component>
 </project>
